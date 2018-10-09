@@ -4,9 +4,9 @@ kendraio-console
 Kendraio Console
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/kendraio-console.svg)](https://npmjs.org/package/kendraio-console)
-[![Downloads/week](https://img.shields.io/npm/dw/kendraio-console.svg)](https://npmjs.org/package/kendraio-console)
-[![License](https://img.shields.io/npm/l/kendraio-console.svg)](https://github.com/kendraio/kendraio-console/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@kendraio/console.svg)](https://npmjs.org/package/@kendraio/console)
+[![Downloads/week](https://img.shields.io/npm/dw/@kendraio/console.svg)](https://npmjs.org/package/@kendraio/console)
+[![License](https://img.shields.io/npm/l/@kendraio/console.svg)](https://github.com/kendraio/kendraio-console/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
