@@ -1,7 +1,7 @@
 {
   "name": "@kendraio/console",
   "description": "Kendraio Console",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Kendraio @kendraio",
   "bin": {
     "kendraio": "./bin/run"

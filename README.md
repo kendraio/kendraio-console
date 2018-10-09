@@ -19,7 +19,7 @@ $ npm install -g @kendraio/console
 $ kendraio COMMAND
 running command...
 $ kendraio (-v|--version|version)
-@kendraio/console/0.0.0 linux-x64 node-v10.11.0
+@kendraio/console/0.0.1 linux-x64 node-v10.11.0
 $ kendraio --help [COMMAND]
 USAGE
   $ kendraio COMMAND
@@ -49,7 +49,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/kendraio/kendraio-console/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/kendraio/kendraio-console/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `kendraio help [COMMAND]`
 
