@@ -15,11 +15,11 @@ Kendraio Console
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g kendraio-console
+$ npm install -g @kendraio/console
 $ kendraio COMMAND
 running command...
 $ kendraio (-v|--version|version)
-kendraio-console/0.0.0 linux-x64 node-v10.11.0
+@kendraio/console/0.0.0 linux-x64 node-v10.11.0
 $ kendraio --help [COMMAND]
 USAGE
   $ kendraio COMMAND
