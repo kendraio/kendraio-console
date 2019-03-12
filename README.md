@@ -19,7 +19,7 @@ $ npm install -g @kendraio/console
 $ kendraio COMMAND
 running command...
 $ kendraio (-v|--version|version)
-@kendraio/console/0.0.2 linux-x64 node-v10.11.0
+@kendraio/console/0.0.2 linux-x64 node-v10.15.1
 $ kendraio --help [COMMAND]
 USAGE
   $ kendraio COMMAND
@@ -28,8 +28,31 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`kendraio convert INPUTFILE OUTPUTFILE`](#kendraio-convert-inputfile-outputfile)
 * [`kendraio hello [FILE]`](#kendraio-hello-file)
 * [`kendraio help [COMMAND]`](#kendraio-help-command)
+
+## `kendraio convert INPUTFILE OUTPUTFILE`
+
+convert file format using adapter
+
+```
+USAGE
+  $ kendraio convert INPUTFILE OUTPUTFILE
+
+OPTIONS
+  -e, --extract=extract  entity to extract
+
+EXAMPLE
+  $ kendraio convert input.xml output.csv
+  convert an input file from XML to CSV
+  $ kendraio convert var/data/rin-sample-01.xml test.csv -e="ResourceList.SoundRecording"
+  specify a custom extraction rule
+  $ kendraio convert var/data/rin-sample-01.xml test.csv -e="PartyList.Party"
+  the default extraction rule
+```
+
+_See code: [src/commands/convert.ts](https://github.com/kendraio/kendraio-console/blob/v0.0.2/src/commands/convert.ts)_
 
 ## `kendraio hello [FILE]`
 
@@ -66,5 +89,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.2/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 <!-- commandsstop -->
