@@ -1,6 +1,6 @@
 import { Command, flags } from '@oclif/command';
 import * as fs from 'fs-extra';
-import * as converter from 'json-2-csv';
+import { json2csvAsync } from 'json-2-csv';
 import { get } from 'lodash';
 // import * as path from 'path';
 import * as X2JS from 'x2js';
@@ -51,14 +51,10 @@ the default extraction rule
     const _r = x2js.xml2js(content) as any;
     const outputItems = get(_r, `RecordingInformationNotification.${extractor}`);
 
-    converter.json2csv(outputItems, (err, csv) => {
-      if (err) {
-        console.error(err.message);
-      }
-      fs.writeFileSync(args.outputFile, csv);
-    }, {
+    const csv = await json2csvAsync(outputItems, {
       emptyFieldValue: '',
       expandArrayObjects: true
     });
+    fs.writeFileSync(args.outputFile, csv);
   }
 }
