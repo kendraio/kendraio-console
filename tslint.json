@@ -1,6 +1,7 @@
 {
   "extends": "@oclif/tslint",
   "rules": {
-    "semicolon": true
+    "semicolon": true,
+    "no-console": false
   }
 }
