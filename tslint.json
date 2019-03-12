@@ -3,6 +3,9 @@
   "rules": {
     "semicolon": true,
     "no-console": false,
-    "no-trailing-whitespace": false
+    "no-trailing-whitespace": false,
+    "no-consecutive-blank-lines": false,
+    "object-curly-spacing": true,
+    "no-string-literal": false
   }
 }
