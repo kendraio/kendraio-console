@@ -4,6 +4,7 @@ import { json2csvAsync } from 'json-2-csv';
 import { get } from 'lodash';
 // import * as path from 'path';
 import * as X2JS from 'x2js';
+import * as inquirer from 'inquirer';
 
 export class Convert extends Command {
   static description = 'convert file format using adapter';
@@ -37,7 +38,40 @@ the default extraction rule
   async run() {
     // can get args as an object
     const { args, flags } = this.parse(Convert);
-    const extractor = flags.extract || 'PartyList.Party';
+
+    const answers = await inquirer.prompt([
+      {
+        type: 'list',
+        name: 'type',
+        message: 'Which object set do you want to export?',
+        default: 'Parties',
+        choices: [
+          {
+            name: 'Parties',
+            value: 'PartyList.Party'
+          },
+          {
+            name: 'Recordings',
+            value: 'ResourceList.SoundRecording'
+          },
+          {
+            name: 'Works',
+            value: 'MusicalWorkList.MusicalWork'
+          },
+          {
+            name: 'Projects',
+            value: 'ProjectList.Project'
+          },
+          {
+            name: 'Sessions',
+            value: 'SessionList.Session'
+          }
+        ]
+      }
+    ]);
+    // console.log(answers);
+
+    const extractor = answers['type'];
     // const userConfig = await fs.readJSON(path.join(this.config.configDir, 'config.json'));
     // console.log('extra user config', userConfig);
 
