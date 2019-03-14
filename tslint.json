@@ -6,6 +6,7 @@
     "no-trailing-whitespace": false,
     "no-consecutive-blank-lines": false,
     "object-curly-spacing": true,
-    "no-string-literal": false
+    "no-string-literal": false,
+    "no-empty-line-after-opening-brace": false
   }
 }
