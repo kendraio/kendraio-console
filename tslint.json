@@ -7,6 +7,8 @@
     "no-consecutive-blank-lines": false,
     "object-curly-spacing": true,
     "no-string-literal": false,
-    "no-empty-line-after-opening-brace": false
+    "no-empty-line-after-opening-brace": false,
+    "no-http-string": false,
+    "no-unused": false
   }
 }

@@ -1,0 +1,3 @@
+IsOrganization:
+  '@id': 'http://ddex.org/rin#IsOrganisation'
+  '@type': http://schema.org/Boolean
